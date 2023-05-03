@@ -3,8 +3,8 @@ int main()
 {
     char str[100];
     cout << "\nNhap vao mot chuoi...";
+     cin.getline(str, 100);
     cout << "\nChuoi nhap vao la:" << str;
-    cin.getline(str, 100);
     chuanHoa_Chuoi(str);
     cout << "\nChuoi sau khi cat khoang trang la:#"
          << str << "#";

@@ -25,7 +25,7 @@ void chuanHoa_Chuoi(char chuoi[])
     // cat bo nhung khoang trang o giua chuoi
     for (i = 0; i < strlen(chuoi); i++)
         if (chuoi[i] == ' ')
-            while (chuoi[i + 1] = ' ')
+            while (chuoi[i + 1] == ' ')
             {
                 // tinh tien chuoi phia sau len
                 for (unsigned int j = i + 1; j < strlen(chuoi); j++)
@@ -56,7 +56,8 @@ int kt_ChuoiDoixung(char chuoi[])
 void chuyen_kituM_hoa(char chuoi[])
 {
     for (int i = 0; i < strlen(chuoi); i++)
-        if (chuoi[i] == 'm')
+//    	if (chuoi[i]== 'm')
+        if (chuoi[i+1] == ' ')
             chuoi[i] = toupper(chuoi[i]);
         else
             chuoi[i] = tolower(chuoi[i]);
